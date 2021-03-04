@@ -19,20 +19,21 @@
       <div class="container">
         <div class="header__wrapper">
           <div class="header__controls">
-            <img
-              class="header__logo"
-              src="./img/logo.svg"
-              alt="logo"
-              width="44"
-              height="38"
-            />
+            <a href="index.html"
+              ><img
+                class="header__logo"
+                src="./img/logo.svg"
+                alt="logo"
+                width="44"
+                height="38"
+            /></a>
             <img src="./img/loupe.svg" alt="loupe" width="26" height="27" />
           </div>
           <div class="header__controls">
-            <button class="header__button">
-              <img src="./img/loupe.svg" alt="loupe" width="26" height="27" />
+            <button class="header__button" id="menu_btn">
+              <img src="./img/menu.svg" alt="loupe" width="26" height="27" />
             </button>
-            <a class="header__person-link" href="#"
+            <a class="header__person-link" href="registration.html"
               ><img src="./img/person.svg" alt="loupe" width="26" height="27"
             /></a>
             <a href="#"
@@ -41,38 +42,44 @@
           </div>
         </div>
       </div>
-      <nav class="header__navigation">
-        menu
-        <ul>
-          <li>
-            <h2>man</h2>
-            <ul>
-              <li><a href="#">link</a></li>
-              <li><a href="#">link</a></li>
-              <li><a href="#">link</a></li>
-              <li><a href="#">link</a></li>
-            </ul>
-          </li>
-          <li>
-            <h2>woman</h2>
-            <ul>
-              <li><a href="#">link</a></li>
-              <li><a href="#">link</a></li>
-              <li><a href="#">link</a></li>
-              <li><a href="#">link</a></li>
-            </ul>
-          </li>
-          <li>
-            <h2>kids</h2>
-            <ul>
-              <li><a href="#">link</a></li>
-              <li><a href="#">link</a></li>
-              <li><a href="#">link</a></li>
-              <li><a href="#">link</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
+      <div class="header__menu-hover" id="hover"></div>
+      <div class="header__navigation" id="nav">
+        <nav class="header__menu">
+          <ul class="header__navlist">
+            <span class="header__menu-heading">Menu</span>
+            <div class="header__menu--close" id="close-menu"></div>
+            <li>
+              <span class="header__nav-parent-category">man</span>
+              <ul>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Bags</a></li>
+                <li><a href="#">Denim</a></li>
+                <li><a href="#">T-Shirts</a></li>
+              </ul>
+            </li>
+            <li>
+              <span class="header__nav-parent-category">woman</span>
+              <ul>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Jackets & Coats</a></li>
+                <li><a href="#">Polos</a></li>
+                <li><a href="#">T-Shirts</a></li>
+                <li><a href="#">Shirts</a></li>
+              </ul>
+            </li>
+            <li>
+              <span class="header__nav-parent-category">kids</span>
+              <ul>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Jackets & Coats</a></li>
+                <li><a href="#">Polos</a></li>
+                <li><a href="#">T-Shirts</a></li>
+                <li><a href="#">Bags</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <section class="brand">
@@ -123,13 +130,23 @@
         </p>
         <ul class="products__list">
           <li class="products__item">
-            <img
-              src="img/product-1.png"
-              class="products__img"
-              alt="product-1"
-              width="360"
-              height="420"
-            />
+            <div class="products__image">
+              <img
+                src="img/product-1.png"
+                class="products__img"
+                alt="product-1"
+                width="360"
+                height="420"
+              />
+              <div class="products__hover">
+                <div class="products__add">
+                  <button>
+                    <span class="products__add-btn"></span>
+                    <span>Add to Cart</span>
+                  </button>
+                </div>
+              </div>
+            </div>
             <div class="products__info">
               <h3 class="products__name">ellery x m'o capsule</h3>
               <p class="products__description">
@@ -141,13 +158,23 @@
             </div>
           </li>
           <li class="products__item">
-            <img
-              src="img/product-2.png"
-              class="products__img"
-              alt="product-2"
-              width="360"
-              height="420"
-            />
+            <div class="products__image">
+              <img
+                src="img/product-2.png"
+                class="products__img"
+                alt="product-2"
+                width="360"
+                height="420"
+              />
+              <div class="products__hover">
+                <div class="products__add">
+                  <button>
+                    <span class="products__add-btn"></span>
+                    <span>Add to Cart</span>
+                  </button>
+                </div>
+              </div>
+            </div>
             <div class="products__info">
               <h3 class="products__name">ellery x m'o capsule</h3>
               <p class="products__description">
@@ -159,13 +186,23 @@
             </div>
           </li>
           <li class="products__item">
-            <img
-              src="img/product-3.png"
-              class="products__img"
-              alt="product-3"
-              width="360"
-              height="420"
-            />
+            <div class="products__image">
+              <img
+                src="img/product-3.png"
+                class="products__img"
+                alt="product-3"
+                width="360"
+                height="420"
+              />
+              <div class="products__hover">
+                <div class="products__add">
+                  <button>
+                    <span class="products__add-btn"></span>
+                    <span>Add to Cart</span>
+                  </button>
+                </div>
+              </div>
+            </div>
             <div class="products__info">
               <h3 class="products__name">ellery x m'o capsule</h3>
               <p class="products__description">
@@ -177,13 +214,23 @@
             </div>
           </li>
           <li class="products__item">
-            <img
-              src="img/product-4.png"
-              class="products__img"
-              alt="product-4"
-              width="360"
-              height="420"
-            />
+            <div class="products__image">
+              <img
+                src="img/product-4.png"
+                class="products__img"
+                alt="product-4"
+                width="360"
+                height="420"
+              />
+              <div class="products__hover">
+                <div class="products__add">
+                  <button>
+                    <span class="products__add-btn"></span>
+                    <span>Add to Cart</span>
+                  </button>
+                </div>
+              </div>
+            </div>
             <div class="products__info">
               <h3 class="products__name">ellery x m'o capsule</h3>
               <p class="products__description">
@@ -195,13 +242,23 @@
             </div>
           </li>
           <li class="products__item">
-            <img
-              src="img/product-5.png"
-              class="products__img"
-              alt="product-5"
-              width="360"
-              height="420"
-            />
+            <div class="products__image">
+              <img
+                src="img/product-5.png"
+                class="products__img"
+                alt="product-5"
+                width="360"
+                height="420"
+              />
+              <div class="products__hover">
+                <div class="products__add">
+                  <button>
+                    <span class="products__add-btn"></span>
+                    <span>Add to Cart</span>
+                  </button>
+                </div>
+              </div>
+            </div>
             <div class="products__info">
               <h3 class="products__name">ellery x m'o capsule</h3>
               <p class="products__description">
@@ -213,13 +270,23 @@
             </div>
           </li>
           <li class="products__item">
-            <img
-              src="img/product-6.png"
-              class="products__img"
-              alt="product-6"
-              width="360"
-              height="420"
-            />
+            <div class="products__image">
+              <img
+                src="img/product-6.png"
+                class="products__img"
+                alt="product-6"
+                width="360"
+                height="420"
+              />
+              <div class="products__hover">
+                <div class="products__add">
+                  <button>
+                    <span class="products__add-btn"></span>
+                    <span>Add to Cart</span>
+                  </button>
+                </div>
+              </div>
+            </div>
             <div class="products__info">
               <h3 class="products__name">ellery x m'o capsule</h3>
               <p class="products__description">
@@ -282,35 +349,51 @@
     <footer class="footer">
       <section class="footer__subscription">
         <div class="footer__content container">
-        <div class="footer__quote">
-          <img class="footer__image" src="img/footer-image.png"
-          alt="footer-image width="96" height="96">
-          <p class="footer__text">
-            “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
-            <span style="footer__text-italic">pulvinar purus condimentum“</span>
-          </p>
+          <div class="footer__quote">
+            <img class="footer__image" src="img/footer-image.png"
+            alt="footer-image width="96" height="96">
+            <p class="footer__text">
+              “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+              <span style="footer__text-italic"
+                >pulvinar purus condimentum“</span
+              >
+            </p>
+          </div>
+          <div class="footer__subscribe">
+            <h3 class="footer__substitle">Subscribe</h3>
+            <p class="footer__substext">for our newletter and promotion</p>
+            <form class="footer__form">
+              <input
+                type="text"
+                class="footer__input"
+                name="Email"
+                placeholder="Enter Your Email"
+              />
+              <button class="footer__form--subscribe">Subscribe</button>
+            </form>
+          </div>
         </div>
-        <div class="footer__subscribe">
-          <h3 class="footer__substitle">Subscribe</h3>
-          <p class="footer__substext">for our newletter and promotion</p>
-          <form class="footer__form">
-            <input type="text" name="Email" placeholder="Enter Your Email" />
-            <button class="footer__form--subscribe">Subscribe</button>
-          </form>
-        </div>
-      </div>
       </section>
       <section class="footer__bottom">
         <div class="footer__content container">
-        <p class="footer__copy">© 2021 Brand All Rights Reserved.</p>
-        <ul class="footer__icons">
-          <li><a href="#"><img src="img/facebook.png" width="32px" height="32px"></a></li>
-          <li><a href="#"><img src="img/instagram.png" width="32px" height="32px"></a></li>
-          <li><a href="#"><img src="img/pinterest.png" width="32px" height="32px"></a></li>
-          <li><a href="#"><img src="img/twitter.png" width="32px" height="32px"></a></li>
-        </ul>
+          <p class="footer__copy">© 2021 Brand All Rights Reserved.</p>
+          <ul class="footer__icons">
+            <li class="footer__icons-img">
+              <a href="#"><img src="img/fb.png" /></a>
+            </li>
+            <li class="footer__icons-img">
+              <a href="#"><img src="img/inst.png" /></a>
+            </li>
+            <li class="footer__icons-img">
+              <a href="#"><img src="img/pnt.png" /></a>
+            </li>
+            <li class="footer__icons-img">
+              <a href="#"><img src="img/twt.png" /></a>
+            </li>
+          </ul>
         </div>
       </section>
+      <script src="js/menu.js"></script>
     </footer>
   </body>
 </html>
