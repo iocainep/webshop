@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__controls">
+            <a href="index.html"
+              ><img
+                class="header__logo"
+                src="./img/logo.svg"
+                alt="logo"
+                width="44"
+                height="38"
+            /></a>
+            <img
+              class="header__loupe-logo"
+              src="./img/loupe.svg"
+              alt="loupe"
+              width="26"
+              height="27"
+            />
+          </div>
+          <div class="header__controls">
+            <button class="header__button" id="menu_btn">
+              <img
+                class="header__menu-icon"
+                src="./img/menu.svg"
+                alt="loupe"
+                width="26"
+                height="27"
+              />
+            </button>
+            <a class="header__person-link" href="#"
+              ><img
+                class="header__reg-icon"
+                src="./img/person.svg"
+                alt="loupe"
+                width="26"
+                height="27"
+            /></a>
+            <a class="header__cart-link" href="#"
+              ><img
+                class="header__cart-icon"
+                src="./img/cart.svg"
+                alt="loupe"
+                width="26"
+                height="27"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="header__menu-hover" id="hover"></div>
+      <div class="header__navigation" id="nav">
+        <nav class="header__menu">
+          <ul class="header__navlist">
+            <span class="header__menu-heading">Menu</span>
+            <div class="header__menu--close" id="close-menu"></div>
+            <li>
+              <span class="header__nav-parent-category">man</span>
+              <ul>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Bags</a></li>
+                <li><a href="#">Denim</a></li>
+                <li><a href="#">T-Shirts</a></li>
+              </ul>
+            </li>
+            <li>
+              <span class="header__nav-parent-category">woman</span>
+              <ul>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Jackets & Coats</a></li>
+                <li><a href="#">Polos</a></li>
+                <li><a href="#">T-Shirts</a></li>
+                <li><a href="#">Shirts</a></li>
+              </ul>
+            </li>
+            <li>
+              <span class="header__nav-parent-category">kids</span>
+              <ul>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Jackets & Coats</a></li>
+                <li><a href="#">Polos</a></li>
+                <li><a href="#">T-Shirts</a></li>
+                <li><a href="#">Bags</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="registration">
+      <div class="registration__header-bg">
+        <div class="registration__header-content container">
+          <h1>registration</h1>
+        </div>
+      </div>
+      <section class="registration__area container">
+        <form class="registration__form" action="" method="GET">
+          <fieldset>
+            <legend class="registration__title">Your Name</legend>
+            <input
+              class="registration__form-width"
+              type="text"
+              name="firstname"
+              placeholder="First Name"
+            />
+            <input
+              class="registration__form-width"
+              type="text"
+              name="lastname"
+              placeholder="Last Name"
+            />
+            <label class="registration__radio-btn" for="gender">
+              <input
+                id="male"
+                class="registration__gender"
+                name="gender"
+                type="radio"
+                value="male"
+              />
+              <label for="male">Male</label>
+              <input
+                id="female"
+                class="registration__gender"
+                name="gender"
+                type="radio"
+                value="female"
+              />
+              <label for="female">Female</label>
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend class="registration__title">Login details</legend>
+            <input
+              class="registration__form-width"
+              type="email"
+              placeholder="Email"
+            />
+            <input
+              class="registration__form-width"
+              type="password"
+              placeholder="Password"
+            />
+            <h5>
+              Please use 8 or more characters, with at least 1 number and a
+              mixture of uppercase and lowercase letters
+            </h5>
+            <button type="submit" class="registration__btn">
+              join now
+              <img src="img/registration-btn.png" />
+            </button>
+          </fieldset>
+        </form>
+        <div class="registration__loyalty">
+          <h2>loyalty has its perks</h2>
+          <p>
+            Get in on the loyalty program where you can earn points and unlock
+            serious perks. Starting with these as soon as you join:
+          </p>
+          <ul>
+            <li>15% off welcome offer</li>
+            <li>Free shipping, returns and exchanges on all orders</li>
+            <li>$10 off a purchase on your birthday</li>
+            <li>Early access to products</li>
+            <li>Exclusive offers & rewards</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <section class="footer__subscription">
+        <div class="footer__content container">
+          <div class="footer__quote">
+            <img class="footer__image" src="img/footer-image.png"
+            alt="footer-image width="96" height="96">
+            <p class="footer__text">
+              “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+              <span style="footer__text-italic"
+                >pulvinar purus condimentum“</span
+              >
+            </p>
+          </div>
+          <div class="footer__subscribe">
+            <h3 class="footer__substitle">Subscribe</h3>
+            <p class="footer__substext">for our newletter and promotion</p>
+            <form class="footer__form">
+              <input
+                type="email"
+                class="footer__input"
+                name="Email"
+                placeholder="Enter Your Email"
+              />
+              <button type="submit" class="footer__form--subscribe">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="footer__bottom">
+        <div class="footer__content container">
+          <p class="footer__copy">© 2021 Brand All Rights Reserved.</p>
+          <ul class="footer__icons">
+            <li class="footer__icons-img">
+              <a href="#"><img src="img/fb.png" /></a>
+            </li>
+            <li class="footer__icons-img">
+              <a href="#"><img src="img/inst.png" /></a>
+            </li>
+            <li class="footer__icons-img">
+              <a href="#"><img src="img/pnt.png" /></a>
+            </li>
+            <li class="footer__icons-img">
+              <a href="#"><img src="img/twt.png" /></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <script src="js/menu.js"></script>
+    </footer>
+  </body>
+</html>
