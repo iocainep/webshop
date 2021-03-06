@@ -13,3 +13,7 @@ close.addEventListener('click', function () {
     hover.classList.toggle('display-block');
 });
 
+hover.addEventListener('click', function () {
+    menu.classList.remove('display-block');
+    hover.classList.remove('display-block');
+});

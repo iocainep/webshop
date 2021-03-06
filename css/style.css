@@ -7,8 +7,12 @@
     --brown: #474040;
     --grey: #9F9F9F;
     --very-light-grey: #FBFBFB;
+    --dark-grey: #A4A4A4;
+    --space-grey: #B1B1B1;
+    --granite-grey: #575757;
     --white: #FFFFFF;
     --cold-white: #F8F8F8;
+    --white-smoke: #F5F3F3;
     --gainsboro: #E1E1E1;
     --lavender-blush: #F8F3F4;
     --red: #FF0000;
@@ -36,6 +40,13 @@ button:focus {
 
 input:focus {
     outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
 
 .container {
@@ -133,6 +144,22 @@ input:focus {
     border: none;
     background-color: transparent;
     margin: 0 34px 0 0;
+}
+
+.header__button:hover .header__menu-icon {
+    filter: invert(25%);
+}
+
+.header__person-link:hover .header__reg-icon {
+    filter: invert(25%);
+}
+
+.header__cart-link:hover .header__cart-icon {
+    filter: invert(25%);
+}
+
+.header__loupe-logo:hover {
+    filter: invert(25%);
 }
 
 .header__logo {
@@ -257,43 +284,40 @@ input:focus {
     background: var(--cold-white);
 }
 
-.products__hover {
-    display: none;
-}
-
 .products__add {
     position: absolute;
     height: 100%;
     width: 100%;
     background: var(--dark);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     opacity: 0.7;
     top: 0px;
+    min-height: 420px;
 }
 
-.products__add button {
-    border: 1px solid var(--white);
-    background: transparent;
-    color: var(--white);
-    display: flex;
-    justify-content: center;
-    width: 138px;
-    height: 43px;
+.products__item-overlay {
+    text-decoration: none;
+    padding: 0 13px;
     align-items: center;
+    justify-content: space-between;
+    display: flex;
+    border: 1px solid var(--white);
+    box-sizing: border-box;
+    font-size: 14px;
+    color: var(--white);
+    min-height: 43px;
+    min-width: 138px;
+    fill: var(--white);
+    top: 192px;
+    left: 110px;
+    position: absolute;
 }
 
-.products__add-btn {
-    background-image: url(../img/main-cart.svg);
-    width: 26px;
-    height: 24px;
-    background-size: cover;
-    margin-right: 11px;
-}
-
-.products__item:hover .products__hover {
+.products__image:hover .products__add {
     display: block;
+}
+
+.products__add {
+    display: none;
 }
 
 .products__image {
@@ -511,7 +535,7 @@ input:focus {
     padding: 59px 0 60px 0;
 }
 
-.registration__header-text {
+.registration__header-content h1 {
     font-size: 24px;
     line-height: 29px;
     color: var(--dark-pink);
@@ -531,7 +555,7 @@ input:focus {
     padding: 64px 0 96px 0;
 }
 
-.registration__form h4{
+.registration__title{
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
@@ -547,6 +571,10 @@ input:focus {
     font-size: 13px;
     line-height: 16px;
     color: var(--grey);
+}
+
+.registration__form-width {
+    width: 100%;
 }
 
 .registration__form input {
@@ -566,7 +594,7 @@ input:focus {
     margin: 0 0 33px 0;
 }
 
-.registration__radio-btn h4 {
+.registration__radio-btn label {
     margin: 0 10px 15px 10px;
     font-style: normal;
     font-weight: 300;
@@ -606,7 +634,7 @@ input:focus {
     line-height: 29px;
 }
 
-.registration__loyalty h1 {
+.registration__loyalty h2 {
     margin-bottom: 22px;
     font-style: normal;
     font-weight: 300;
