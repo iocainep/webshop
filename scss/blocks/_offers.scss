@@ -1,0 +1,53 @@
+.offers {
+
+    padding: 0 0 97px 0;
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__item {
+        color: $white;
+        width: 360px;
+        min-height: 260px;
+        background-color: $brown;
+        margin: 0 0 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__item--woman {
+        background-image: url(../img/woman-offers.jpg);
+    }
+
+    &__item--man {
+        background-image: url(../img/man-offers.png);
+    }
+
+    &__item--kids {
+        background-image: url(../img/kids-offers.png);
+    }
+    
+    &__item--accessories {
+        background-image: url(../img/accessories-offers.png);
+        width: 100%;
+        margin: 0;
+    }
+    
+    &__title {
+        font-weight: 400;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    &__subtitle {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        text-transform: uppercase;
+        color: $dark-pink;
+    }
+}

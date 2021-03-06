@@ -1,0 +1,112 @@
+.products {
+    
+    &__title {
+        @include font(30px,36px);
+        color: $dark;
+        text-align: center;
+    }
+
+    &__subtitle {
+        @include font(14px,17px);
+        color: $grey;
+        text-align: center;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        text-align: left;
+        padding: 48px 0 0 0;
+    }
+
+    &__item {
+        width: 360px;
+        margin: 0 0 30px;
+        background: $cold-white;
+    }
+
+    &__add {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: $dark;
+        opacity: 0.7;
+        top: 0px;
+        min-height: 420px;
+    }
+
+    &__item-overlay {
+        text-decoration: none;
+        padding: 0 13px;
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        border: 1px solid $white;
+        box-sizing: border-box;
+        @include font(14px,17px);
+        color: $white;
+        min-height: 43px;
+        min-width: 138px;
+        fill: $white;
+        top: 192px;
+        left: 110px;
+        position: absolute;
+    }
+
+    &__image:hover &__add {
+        display: block;
+    }
+
+    &__add {
+        display: none;
+    }
+
+    &__image {
+        position: relative;
+    }
+
+    &__info {
+        padding: 25px 29px 20px 16px;
+    }
+
+    &__name {
+        @include font(13px,16px);
+        text-transform: uppercase;
+        margin: 0 0 12px;
+    }
+
+    &__description {
+        @include font(14px,17px,300);
+        margin: 0 0 18px;
+    }
+
+    &__price {
+        @include font(16px,19px);
+        color: $dark-pink;
+    }
+
+    &__more {
+        display: flex;	
+        justify-content: center;
+        margin: 49px 0 96px 0;
+    }
+
+    &__btn {
+        appearance: none;
+        border: 1px solid $very-light-red;
+        color: $soft-red;
+        background-color: $white;
+        padding: 14px 38px 13px 38px;
+        @include font(16px,19px,normal)
+    }
+
+    &__btn:hover {
+        background: $dark-pink;
+        color: $white;
+    }
+
+    &__btn:active {
+        border-color: $red;
+    }
+}

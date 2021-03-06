@@ -1,0 +1,200 @@
+.cart {
+
+    &__header-content {
+        padding: 59px 0 60px 0;
+    }
+
+    &__header-content h1 {
+        @include font(24px,29px);
+        color: $dark-pink;
+        text-transform: uppercase;
+    }
+
+    &__header-bg {
+        width: 100%;
+        height: 148px;
+        background: $lavender-blush;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        padding: 96px 0 128px;
+    }
+
+    &__item-list {
+        width: 652px;
+    }
+
+    &__item {
+        position: relative;
+        display: flex;
+        box-shadow: 17px 19px 24px 0px #00000021;
+        margin-bottom: 40px;
+    }
+
+    &__item-remove {
+        position: absolute;
+        fill: $granite-grey;
+        top: 28px;
+        right: 22px;
+    }
+
+    &__item-info {
+        margin: 22px 0 0 31px;
+    }
+
+    &__item-info-title {
+        text-transform: uppercase;
+        max-width: 262px;
+        @include font(24px,29px,400);
+        font-style: normal;
+        margin-bottom: 42px;
+        color: $very-dark-blue;
+    }
+
+    &__item-info-param {
+        @include font(22px,26px);
+        font-style: normal;
+        color: $granite-grey;
+        margin-bottom: 6px;
+    }
+
+    &__item-info-param-float {
+        float: left;
+    }
+
+    &__item-info-price {
+        color: $dark-pink;
+    }
+
+    &__item-qnt {
+        margin-left: 24px;
+        padding-left: 16px;
+        box-sizing: border-box;
+        @include font(18px,22px);
+        width: 44px;
+        border: 1px solid $dark-grey;
+        color: $granite-grey;
+    }
+
+    &__button {
+        padding: 17px 40px;
+        text-decoration: none;
+        @include font(14px,17px,300);
+        border: 1px solid $dark-grey;
+        box-sizing: border-box;
+        text-transform: uppercase;
+        color: $black;
+    }
+
+    &__button:hover, &__button:focus {
+        background: $dark-pink;
+        color: $white;
+    }
+
+    &__button__wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__form {
+        max-width: 360px;
+    }
+
+    &__form-title {
+        text-transform: uppercase;
+        @include font(16px,19px,300);
+        font-style: normal;
+        margin-bottom: 21px;
+    }
+
+    &__form-input {
+        width: 100%;
+        height: 45px;
+        padding-left: 17px;
+        @include font(13px,16px,300);
+        border: 1px solid $dark-grey;
+        box-sizing: border-box;
+        margin-bottom: 21px;
+    }
+
+    &__form-input:last-of-type {
+        margin-bottom: 34px;
+    }
+
+    &__form-input:focus {
+        outline: $soft-red solid !important;
+    }
+
+    &__form-button {
+        padding: 10px 15px;
+        text-decoration: none;
+        @include font(11px,13px,300);
+        border: 1px solid $dark-grey;
+        box-sizing: border-box;
+        text-transform: uppercase;
+        color: $dark-grey;
+    }
+
+    &__form-button:hover, &__form-button:focus {
+        background: $dark-pink;
+        color: $white;
+    }
+
+    &__form-total {
+        text-align: right;
+        box-sizing: border-box;
+        padding: 39px 34px;
+        width: 100%;
+        min-height: 214px;
+        background: $white-smoke;
+        margin-top: 69px;
+    }
+
+    &__form-total-sub {
+        @include font(11px,13px,400);
+        margin-bottom: 12px;
+        text-transform: uppercase;
+    }
+
+    &__form-total-sub-price {
+        margin-left: 20px;
+    }
+
+    &__form-total-main {
+        @include font(16px,19px,700);
+        text-transform: uppercase;
+        margin-bottom: 21px;
+    }
+
+    &__form-total-main-price {
+        margin-left: 20px;
+        color: $dark-pink;
+    }
+
+    &__form-total-delimeter {
+        border: 1px solid $space-grey;
+        margin-bottom: 17px;
+    }
+
+    &__form-total-button {
+        width: 273px;
+        height: 50px;
+        text-align: center;
+        box-sizing: border-box;
+        text-decoration: none;
+        display: block;
+        @include font(16px,50px,300);
+        color: $white;
+        background: $dark-pink;
+        background-position: 121px center;
+        text-transform: uppercase;
+    }
+
+    &__form-total-button:hover, &__form-total-button:focus {
+        background: none;
+        color: $space-grey;
+        border: 1px solid $dark-grey;
+    }
+}

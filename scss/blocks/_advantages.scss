@@ -1,0 +1,25 @@
+.advantages {
+
+    background-color: $very-dark-blue;
+    max-height: 341px;
+
+    &__list {
+        display: flex;
+        padding: 103px 0 104px 0;
+    }
+
+    &__item {
+        text-align: center;
+    }
+
+    &__name {
+        @include font(20px,24px);
+        color: $very-light-grey;
+        padding: 28px 0 16px 0;
+    }
+
+    &__description {
+        @include font(14px,17px,300);
+        color: $very-light-grey;
+    }
+}
