@@ -40,6 +40,7 @@
         position: absolute;
         right: 17px;
         top: 16px;
+        cursor: pointer;
     }
 
     &__menu-heading {
@@ -72,6 +73,11 @@
         border: none;
         background-color: transparent;
         margin: 0 34px 0 0;
+        cursor: pointer;
+    }
+
+    &__controls {
+        cursor: pointer;
     }
 
     &__button:hover &__menu-icon {

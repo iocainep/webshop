@@ -38,6 +38,7 @@
         fill: $granite-grey;
         top: 28px;
         right: 22px;
+        cursor: pointer;
     }
 
     &__item-info {
@@ -76,6 +77,7 @@
         width: 44px;
         border: 1px solid $dark-grey;
         color: $granite-grey;
+        cursor: pointer;
     }
 
     &__button {
@@ -117,6 +119,7 @@
         border: 1px solid $dark-grey;
         box-sizing: border-box;
         margin-bottom: 21px;
+        cursor: pointer;
     }
 
     &__form-input:last-of-type {
@@ -124,7 +127,11 @@
     }
 
     &__form-input:focus {
-        outline: $soft-red solid !important;
+        border-color: $pink;
+    }
+
+    &__form-input:hover {
+        background-color: $pink;
     }
 
     &__form-button {

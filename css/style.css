@@ -142,6 +142,7 @@ input::-webkit-inner-spin-button {
   position: absolute;
   right: 17px;
   top: 16px;
+  cursor: pointer;
 }
 
 .header__menu-heading {
@@ -180,6 +181,11 @@ input::-webkit-inner-spin-button {
   border: none;
   background-color: transparent;
   margin: 0 34px 0 0;
+  cursor: pointer;
+}
+
+.header__controls {
+  cursor: pointer;
 }
 
 .header__button:hover .header__menu-icon {
@@ -258,6 +264,7 @@ input::-webkit-inner-spin-button {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .offers__item--woman {
@@ -322,6 +329,7 @@ input::-webkit-inner-spin-button {
   width: 360px;
   margin: 0 0 30px;
   background: #F8F8F8;
+  cursor: pointer;
 }
 
 .products__add {
@@ -412,6 +420,7 @@ input::-webkit-inner-spin-button {
   line-height: 19px;
   font-weight: normal;
   font-style: normal;
+  cursor: pointer;
 }
 
 .products__btn:hover {
@@ -523,6 +532,15 @@ input::-webkit-inner-spin-button {
   border-radius: 24px 0px 0px 24px;
   border: 0px;
   opacity: 0.67;
+  cursor: pointer;
+}
+
+.footer__input:hover {
+  background: #F1E4EE;
+}
+
+.footer__input:focus {
+  border-color: #F26376;
 }
 
 .footer__form {
@@ -544,6 +562,7 @@ input::-webkit-inner-spin-button {
   align-items: center;
   text-align: center;
   border-radius: 0px 24px 24px 0px;
+  cursor: pointer;
 }
 
 .footer__form--subscribe:hover {
@@ -578,6 +597,7 @@ input::-webkit-inner-spin-button {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .footer__icons-img:hover {
@@ -637,6 +657,19 @@ input::-webkit-inner-spin-button {
 
 .registration__form-width {
   width: 100%;
+  cursor: pointer;
+}
+
+.registration__form-width:hover {
+  background-color: #F1E4EE;
+}
+
+.registration__form-width:focus {
+  border-color: #F1E4EE;
+}
+
+.registration__gender {
+  cursor: pointer;
 }
 
 .registration__form input {
@@ -682,6 +715,7 @@ input::-webkit-inner-spin-button {
   font-weight: 400;
   font-style: normal;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .registration__btn:hover {
@@ -760,6 +794,7 @@ input::-webkit-inner-spin-button {
   fill: #575757;
   top: 28px;
   right: 22px;
+  cursor: pointer;
 }
 
 .cart__item-info {
@@ -807,6 +842,7 @@ input::-webkit-inner-spin-button {
   width: 44px;
   border: 1px solid #A4A4A4;
   color: #575757;
+  cursor: pointer;
 }
 
 .cart__button {
@@ -857,6 +893,7 @@ input::-webkit-inner-spin-button {
   border: 1px solid #A4A4A4;
   box-sizing: border-box;
   margin-bottom: 21px;
+  cursor: pointer;
 }
 
 .cart__form-input:last-of-type {
@@ -864,7 +901,11 @@ input::-webkit-inner-spin-button {
 }
 
 .cart__form-input:focus {
-  outline: #F26376 solid !important;
+  border-color: #F1E4EE;
+}
+
+.cart__form-input:hover {
+  background-color: #F1E4EE;
 }
 
 .cart__form-button {

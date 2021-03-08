@@ -44,6 +44,19 @@
 
     &__form-width {
         width: 100%;
+        cursor: pointer;
+    }
+
+    &__form-width:hover {
+        background-color: $pink;
+    }
+
+    &__form-width:focus {
+        border-color: $pink;
+    }
+
+    &__gender {
+        cursor: pointer;
     }
 
     &__form input {
@@ -80,6 +93,7 @@
         padding: 0 25px 0 29px;
         @include font(14px,17px);
         text-transform: uppercase;
+        cursor: pointer;
     }
 
     &__btn:hover {

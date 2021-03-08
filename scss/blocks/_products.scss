@@ -24,6 +24,7 @@
         width: 360px;
         margin: 0 0 30px;
         background: $cold-white;
+        cursor: pointer;
     }
 
     &__add {
@@ -98,7 +99,8 @@
         color: $soft-red;
         background-color: $white;
         padding: 14px 38px 13px 38px;
-        @include font(16px,19px,normal)
+        @include font(16px,19px,normal);
+        cursor: pointer;
     }
 
     &__btn:hover {
