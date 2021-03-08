@@ -1,0 +1,106 @@
+.header {
+
+    background-color: $dark;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 75px;
+    }
+
+    &__menu-hover {
+        position: absolute;
+        width: 1670px;
+        height: 764px;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+    }
+
+    &__navigation {
+        display: none;
+        height: 765px;
+        width: 232px;
+        position: absolute;
+        right: 0;
+        z-index: 1;
+        @include font(14px,17px,400);
+        background: $white;
+    }
+
+    &__menu {
+        padding: 32px 0 0 32px;
+    }
+
+    &__menu--close {
+        background-image: url(../img/close-menu.svg);
+        margin: 16px 16px 12px;
+        height: 12px;
+        width: 12px;
+        position: absolute;
+        right: 17px;
+        top: 16px;
+        cursor: pointer;
+    }
+
+    &__menu-heading {
+        color: var(--dark);
+        @include font(14px,17px,bold);
+        text-transform: uppercase;
+        padding: 0px 0 0px 20px;
+    }
+
+    &__menu-display-block {
+        display: block;
+    }
+
+    &__nav-parent-category {
+        color: $dark-pink;
+        @include font(14px,17px);
+        text-transform: uppercase;
+    }
+
+    &__navlist li {
+        margin: 12px 0 0 20px;
+    }
+
+    &__navigation a{
+        text-decoration: none;
+        color: hsl(0, 0%, 43%);
+    }
+
+    &__button {
+        border: none;
+        background-color: transparent;
+        margin: 0 34px 0 0;
+        cursor: pointer;
+    }
+
+    &__controls {
+        cursor: pointer;
+    }
+
+    &__button:hover &__menu-icon {
+        filter: invert(25%);
+    }
+
+    &__person-link:hover &__reg-icon {
+        filter: invert(25%);
+    }
+
+    &__cart-link:hover &__cart-icon {
+        filter: invert(25%);
+    }
+
+    &__loupe-logo:hover {
+        filter: invert(25%);
+    }
+
+    &__logo {
+        margin: 0 41px 0 0;
+    }
+
+    &__person-link {
+        margin: 0 34px 0 0;
+    }
+}
