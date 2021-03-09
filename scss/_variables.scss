@@ -1,7 +1,8 @@
+/*colors*/
 $dark: #222222;
 $very-dark-blue: #222224;
 $black: #000000;
-$pink: #F1E4EE;
+$pink: #F1E4E4;
 $dark-pink: #F16D7F;
 $brown: #474040;
 $grey: #9F9F9F;
@@ -17,3 +18,8 @@ $lavender-blush: #F8F3F4;
 $red: #FF0000;
 $very-light-red: #FF6A6A;
 $soft-red: #F26376;
+
+/* adaptive */
+$desktop-width: 1600px;
+$tablet-width: 768px;
+$mobile-width: 375px;

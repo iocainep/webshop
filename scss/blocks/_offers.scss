@@ -2,10 +2,24 @@
 
     padding: 0 0 97px 0;
 
+    @include tablet {
+        padding: 0 0 156px 0;
+    }
+
+    @include mobile {
+        padding: 0 0 64px 0;
+    }
+
     &__list {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+
+        @include mobile {
+            flex-direction: column;
+            align-items: center;
+            padding: 65px 0 0 0;
+        }
     }
 
     &__item {
@@ -18,24 +32,66 @@
         justify-content: center;
         align-items: center;
         cursor: pointer;
+
+        @include tablet {
+            max-width: 232px;
+            min-height: 167px;
+        }
     }
 
     &__item--woman {
         background-image: url(../img/woman-offers.jpg);
+        
+        @include tablet {
+            background-size: cover;
+        }
+
+        @include mobile {
+            min-width: 343px;
+            min-height: 247px;
+        }
     }
 
     &__item--man {
         background-image: url(../img/man-offers.png);
+
+        @include tablet {
+            background-size: cover;
+        }
+
+        @include mobile {
+            min-width: 343px;
+            min-height: 247px;
+        }
     }
 
     &__item--kids {
         background-image: url(../img/kids-offers.png);
+
+        @include tablet {
+            background-size: cover;
+        }
+
+        @include mobile {
+            min-width: 343px;
+            min-height: 247px;
+        }
     }
     
     &__item--accessories {
         background-image: url(../img/accessories-offers.png);
         width: 100%;
         margin: 0;
+
+        @include tablet {
+            max-width: 735px;
+            background-size: 100%;          
+        }
+
+        @include mobile {
+            max-width: 343px;
+            min-height: 111px;
+        }
     }
     
     &__title {

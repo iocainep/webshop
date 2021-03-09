@@ -74,6 +74,10 @@
         background-color: transparent;
         margin: 0 34px 0 0;
         cursor: pointer;
+
+        @include mobile {
+            margin: 0 16px 0 0;
+        }
     }
 
     &__controls {
@@ -98,9 +102,28 @@
 
     &__logo {
         margin: 0 41px 0 0;
+
+        @include tablet {
+            margin: 0 41px 0 18px;
+        }
+
+        @include mobile {
+            margin: 0 41px 0 16px;
+        }
     }
 
     &__person-link {
         margin: 0 34px 0 0;
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    &__cart-link {
+        
+        @include mobile {
+            display: none;
+        }
     }
 }
