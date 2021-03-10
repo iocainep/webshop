@@ -51,8 +51,6 @@ table {
   border-spacing: 0;
 }
 
-/*colors*/
-/* adaptive */
 html {
   overflow-x: hidden;
 }
@@ -88,7 +86,7 @@ input::-webkit-inner-spin-button {
   margin: 0 auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .container {
     width: 96%;
   }
@@ -118,8 +116,8 @@ input::-webkit-inner-spin-button {
 
 .header__menu-hover {
   position: absolute;
-  width: 1670px;
-  height: 764px;
+  width: 100%;
+  height: 3500px;
   background-color: rgba(0, 0, 0, 0.5);
   display: none;
 }
@@ -222,7 +220,7 @@ input::-webkit-inner-spin-button {
   margin: 0 41px 0 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .header__logo {
     margin: 0 41px 0 18px;
   }
@@ -255,7 +253,7 @@ input::-webkit-inner-spin-button {
   margin: 0 0 63px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .brand {
     margin: 0 0 19px;
   }
@@ -285,7 +283,7 @@ input::-webkit-inner-spin-button {
   text-transform: uppercase;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .brand__title {
     font-size: 44px;
     line-height: 53px;
@@ -312,7 +310,7 @@ input::-webkit-inner-spin-button {
   text-transform: uppercase;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .brand__subtitle {
     font-size: 24px;
     line-height: 29px;
@@ -353,7 +351,7 @@ input::-webkit-inner-spin-button {
   padding: 0 0 97px 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .offers {
     padding: 0 0 156px 0;
   }
@@ -391,7 +389,7 @@ input::-webkit-inner-spin-button {
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .offers__item {
     max-width: 232px;
     min-height: 167px;
@@ -402,7 +400,7 @@ input::-webkit-inner-spin-button {
   background-image: url(../img/woman-offers.jpg);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .offers__item--woman {
     background-size: cover;
   }
@@ -419,7 +417,7 @@ input::-webkit-inner-spin-button {
   background-image: url(../img/man-offers.png);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .offers__item--man {
     background-size: cover;
   }
@@ -436,7 +434,7 @@ input::-webkit-inner-spin-button {
   background-image: url(../img/kids-offers.png);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .offers__item--kids {
     background-size: cover;
   }
@@ -455,7 +453,7 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .offers__item--accessories {
     max-width: 735px;
     background-size: 100%;
@@ -594,7 +592,7 @@ input::-webkit-inner-spin-button {
   margin: 49px 0 96px 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .products__more {
     margin: 47px 0 78px 0;
   }
@@ -633,7 +631,7 @@ input::-webkit-inner-spin-button {
   max-height: 341px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .advantages {
     min-height: 610px;
   }
@@ -644,7 +642,7 @@ input::-webkit-inner-spin-button {
   padding: 103px 0 104px 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .advantages__list {
     flex-direction: column;
     align-items: center;
@@ -656,7 +654,7 @@ input::-webkit-inner-spin-button {
   text-align: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .advantages__item {
     max-width: 360px;
     padding: 0 0 48px 0;
@@ -687,7 +685,7 @@ input::-webkit-inner-spin-button {
   background-size: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .footer__subscription {
     background-size: cover;
     height: 100%;
@@ -700,7 +698,7 @@ input::-webkit-inner-spin-button {
   align-items: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .footer__subscription-content {
     flex-direction: column;
   }
@@ -723,7 +721,7 @@ input::-webkit-inner-spin-button {
   text-align: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .footer__quote {
     padding: 53px 0 48px 0;
   }
@@ -747,7 +745,7 @@ input::-webkit-inner-spin-button {
   padding: 150px 100px 0 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .footer__subscribe {
     padding: 0 0 140px 0;
   }
