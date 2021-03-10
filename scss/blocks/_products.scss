@@ -91,6 +91,14 @@
         display: flex;	
         justify-content: center;
         margin: 49px 0 96px 0;
+
+        @include tablet {
+            margin: 47px 0 78px 0;
+        }
+
+        @include mobile {
+            margin: 41px 0 96px 0;
+        }
     }
 
     &__btn {
