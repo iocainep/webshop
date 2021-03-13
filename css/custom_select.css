@@ -91,7 +91,7 @@
 }
 
 .select__item:hover {
-  background-color: #f5f5f5;
+  color:#F16D7F;
   cursor: pointer;
   transition: 0.2s background-color ease-in-out;
 }
