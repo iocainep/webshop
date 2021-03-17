@@ -111,12 +111,15 @@
         color: $dark-pink;
         padding: 15px 56px 15px 23px;
         @include font(16px,19px);
-        cursor: pointer; 
+        cursor: pointer;
+        transition-duration: 500ms;
+        transition-timing-function: ease in;
     }
 
     &__addtocart-btn:hover {
         background-color: $dark-pink;
         color: $white;
+        transform: scale(1.1);
     }
 
     &__other {

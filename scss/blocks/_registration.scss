@@ -94,11 +94,14 @@
         @include font(14px,17px);
         text-transform: uppercase;
         cursor: pointer;
+        transition-duration: 500ms;
+        transition-timing-function: ease in;
     }
 
     &__btn:hover {
         opacity: 0.6;
         color: $white;
+        transform: scale(1.05);
     }
 
     &__loyalty {
