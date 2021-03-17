@@ -68,8 +68,8 @@
       <div class="header__navigation" id="nav">
         <nav class="header__menu">
           <ul class="header__navlist">
-            <span class="header__menu-heading">Menu</span>
-            <div class="header__menu--close" id="close-menu"></div>
+            <li class="header__menu-heading">Menu</li>
+            <li class="header__menu-close" id="close-menu"></li>
             <li>
               <span class="header__nav-parent-category">man</span>
               <ul>
@@ -110,7 +110,7 @@
         </div>
       </div>
       <section class="registration__area container">
-        <form class="registration__form" action="" method="GET">
+        <form class="registration__form" action="#" method="GET">
           <fieldset>
             <legend class="registration__title">Your Name</legend>
             <input
@@ -125,7 +125,7 @@
               name="lastname"
               placeholder="Last Name"
             />
-            <label class="registration__radio-btn" for="gender">
+            <label id="gender" class="registration__radio-btn" for="gender">
               <input
                 id="male"
                 class="registration__gender"
@@ -133,7 +133,7 @@
                 type="radio"
                 value="male"
               />
-              <label for="male">Male</label>
+              <label id="male" for="male">Male</label>
               <input
                 id="female"
                 class="registration__gender"
@@ -141,7 +141,7 @@
                 type="radio"
                 value="female"
               />
-              <label for="female">Female</label>
+              <label id="female" for="female">Female</label>
             </label>
           </fieldset>
           <fieldset>
@@ -162,7 +162,7 @@
             </h5>
             <button type="submit" class="registration__btn">
               join now
-              <img src="img/registration-btn.png" />
+              <img src="img/registration-btn.png" alt="registration-icon" />
             </button>
           </fieldset>
         </form>
@@ -205,7 +205,7 @@
                 name="Email"
                 placeholder="Enter Your Email"
               />
-              <button type="submit" class="footer__form--subscribe">
+              <button type="submit" class="footer__form-subscribe">
                 Subscribe
               </button>
             </form>
@@ -214,19 +214,19 @@
       </section>
       <section class="footer__bottom">
         <div class="footer__content container">
-          <p class="footer__copy">© 2021 Brand All Rights Reserved.</p>
+          <h2 class="footer__copy">© 2021 Brand All Rights Reserved.</h2>
           <ul class="footer__icons">
             <li class="footer__icons-img">
-              <a href="#"><img src="img/fb.png" /></a>
+              <a href="#"><img src="img/fb.png" alt="facebook" /></a>
             </li>
             <li class="footer__icons-img">
-              <a href="#"><img src="img/inst.png" /></a>
+              <a href="#"><img src="img/inst.png" alt="instagram" /></a>
             </li>
             <li class="footer__icons-img">
-              <a href="#"><img src="img/pnt.png" /></a>
+              <a href="#"><img src="img/pnt.png" alt="pinterest" /></a>
             </li>
             <li class="footer__icons-img">
-              <a href="#"><img src="img/twt.png" /></a>
+              <a href="#"><img src="img/twt.png" alt="twitter" /></a>
             </li>
           </ul>
         </div>
