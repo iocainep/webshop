@@ -12,9 +12,10 @@
     &__menu-hover {
         position: absolute;
         width: 100%;
-        height: 3500px;
+        height: 1200px;
         background-color: rgba(0, 0, 0, 0.5);
         display: none;
+        z-index: 1;
     }
 
     &__navigation {
@@ -32,7 +33,8 @@
         padding: 32px 0 0 32px;
     }
 
-    &__menu--close {
+    &__menu-close {
+        display: block;
         background-image: url(../img/close-menu.svg);
         margin: 16px 16px 12px;
         height: 12px;
@@ -47,7 +49,6 @@
         color: var(--dark);
         @include font(14px,17px,bold);
         text-transform: uppercase;
-        padding: 0px 0 0px 20px;
     }
 
     &__menu-display-block {

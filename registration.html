@@ -67,9 +67,9 @@
       <div class="header__menu-hover" id="hover"></div>
       <div class="header__navigation" id="nav">
         <nav class="header__menu">
+          <h1 class="header__menu-heading">Menu</h1>
           <ul class="header__navlist">
-            <span class="header__menu-heading">Menu</span>
-            <div class="header__menu--close" id="close-menu"></div>
+            <li class="header__menu-close" id="close-menu"></li>
             <li>
               <span class="header__nav-parent-category">man</span>
               <ul>
@@ -110,7 +110,7 @@
         </div>
       </div>
       <section class="registration__area container">
-        <form class="registration__form" action="" method="GET">
+        <form class="registration__form" action="#" method="GET">
           <fieldset>
             <legend class="registration__title">Your Name</legend>
             <input
@@ -125,7 +125,7 @@
               name="lastname"
               placeholder="Last Name"
             />
-            <label class="registration__radio-btn" for="gender">
+            <span class="registration__radio-btn">
               <input
                 id="male"
                 class="registration__gender"
@@ -142,7 +142,7 @@
                 value="female"
               />
               <label for="female">Female</label>
-            </label>
+            </span>
           </fieldset>
           <fieldset>
             <legend class="registration__title">Login details</legend>
@@ -156,13 +156,13 @@
               type="password"
               placeholder="Password"
             />
-            <h5>
+            <h4>
               Please use 8 or more characters, with at least 1 number and a
               mixture of uppercase and lowercase letters
-            </h5>
+            </h4>
             <button type="submit" class="registration__btn">
               join now
-              <img src="img/registration-btn.png" />
+              <img src="img/registration-btn.png" alt="registration-icon" />
             </button>
           </fieldset>
         </form>
@@ -186,11 +186,16 @@
       <section class="footer__subscription">
         <div class="footer__content container">
           <div class="footer__quote">
-            <img class="footer__image" src="img/footer-image.png"
-            alt="footer-image width="96" height="96">
+            <img
+              class="footer__image"
+              src="img/footer-image.png"
+              alt="footer-image"
+              width="96"
+              height="96"
+            />
             <p class="footer__text">
               “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
-              <span style="footer__text-italic"
+              <span class="footer__text-italic"
                 >pulvinar purus condimentum“</span
               >
             </p>
@@ -205,7 +210,7 @@
                 name="Email"
                 placeholder="Enter Your Email"
               />
-              <button type="submit" class="footer__form--subscribe">
+              <button type="submit" class="footer__form-subscribe">
                 Subscribe
               </button>
             </form>
@@ -214,19 +219,19 @@
       </section>
       <section class="footer__bottom">
         <div class="footer__content container">
-          <p class="footer__copy">© 2021 Brand All Rights Reserved.</p>
+          <h2 class="footer__copy">© 2021 Brand All Rights Reserved.</h2>
           <ul class="footer__icons">
             <li class="footer__icons-img">
-              <a href="#"><img src="img/fb.png" /></a>
+              <a href="#"><img src="img/fb.png" alt="facebook" /></a>
             </li>
             <li class="footer__icons-img">
-              <a href="#"><img src="img/inst.png" /></a>
+              <a href="#"><img src="img/inst.png" alt="instagram" /></a>
             </li>
             <li class="footer__icons-img">
-              <a href="#"><img src="img/pnt.png" /></a>
+              <a href="#"><img src="img/pnt.png" alt="pinterest" /></a>
             </li>
             <li class="footer__icons-img">
-              <a href="#"><img src="img/twt.png" /></a>
+              <a href="#"><img src="img/twt.png" alt="twitter" /></a>
             </li>
           </ul>
         </div>

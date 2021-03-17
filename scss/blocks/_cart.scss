@@ -39,6 +39,13 @@
         top: 28px;
         right: 22px;
         cursor: pointer;
+        transition-duration: 500ms;
+        transition-timing-function: ease in;
+    }
+
+    &__item-remove:hover {
+        fill: $dark-pink;
+        transform: scale(1.05);
     }
 
     &__item-info {
@@ -47,7 +54,6 @@
 
     &__item-info-title {
         text-transform: uppercase;
-        max-width: 262px;
         @include font(24px,29px,400);
         font-style: normal;
         margin-bottom: 42px;
@@ -88,11 +94,14 @@
         box-sizing: border-box;
         text-transform: uppercase;
         color: $black;
+        transition-duration: 500ms;
+        transition-timing-function: ease in;
     }
 
     &__button:hover, &__button:focus {
         background: $dark-pink;
         color: $white;
+        transform: scale(1.05);
     }
 
     &__button__wrap {
@@ -142,11 +151,14 @@
         box-sizing: border-box;
         text-transform: uppercase;
         color: $dark-grey;
+        transition-duration: 500ms;
+        transition-timing-function: ease in;
     }
 
     &__form-button:hover, &__form-button:focus {
         background: $dark-pink;
         color: $white;
+        transform: scale(1.1);
     }
 
     &__form-total {
@@ -197,11 +209,14 @@
         background: $dark-pink;
         background-position: 121px center;
         text-transform: uppercase;
+        transition-duration: 500ms;
+        transition-timing-function: ease in;
     }
 
     &__form-total-button:hover, &__form-total-button:focus {
         background: none;
         color: $space-grey;
         border: 1px solid $dark-grey;
+        transform: scale(1.05);
     }
 }

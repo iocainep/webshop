@@ -94,6 +94,7 @@
         border: 0px;
         opacity: 0.67;
         cursor: pointer;
+        transition-duration: 500ms;
     }
 
     &__input:hover {
@@ -108,7 +109,7 @@
         display: flex;
     }
 
-    &__form--subscribe{
+    &__form-subscribe{
         @include font(14px,17px);
         text-decoration: none;
         width: 95px;
@@ -121,10 +122,13 @@
         text-align: center;
         border-radius: 0px 24px 24px 0px;
         cursor: pointer;
+        transition-duration: 500ms;
+        transition-timing-function: ease in;
     }
 
-    &__form--subscribe:hover {
+    &__form-subscribe:hover {
         opacity: 0.6;
+        transform: scale(1.1);
     }
 
     &__bottom {
@@ -165,6 +169,7 @@
         align-items: center;
         justify-content: center;
         cursor: pointer;
+        transition-duration: 500ms;
     }
 
     &__icons-img:hover {
