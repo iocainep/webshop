@@ -44,7 +44,7 @@
             />
           </div>
           <div class="header__controls">
-            <button class="header__button" id="menu_btn">
+            <button type="submit" class="header__button" id="menu_btn">
               <img
                 class="header__menu-icon"
                 src="./img/menu.svg"
@@ -196,7 +196,7 @@
             <div class="select">
               <div class="select__backdrop" data-select="backdrop"></div>
               <button
-                type="button"
+                type="submit"
                 class="select__trigger"
                 data-select="trigger"
               ></button>
@@ -209,7 +209,7 @@
             <div class="select2">
               <div class="select__backdrop" data-select="backdrop"></div>
               <button
-                type="button"
+                type="submit"
                 class="select__trigger"
                 data-select="trigger"
               ></button>
@@ -222,7 +222,7 @@
             <div class="select3">
               <div class="select__backdrop" data-select="backdrop"></div>
               <button
-                type="button"
+                type="submit"
                 class="select__trigger"
                 data-select="trigger"
               ></button>
@@ -232,61 +232,9 @@
             </div>
           </li>
         </ul>
-        <!-- Подключаем js-файл CustomSelect -->
         <script src="js/custom_select.js"></script>
-        <script>
-          const select1 = new CustomSelect(".select", {
-            defaultValue: "Choose color",
-            data: ["Black", "Grey", "White"],
-            onSelected(item) {
-              console.log(`Выбранное значение: ${item.textContent}`);
-            },
-          });
-          document
-            .querySelector(".select")
-            .addEventListener("select.change", (e) => {
-              console.log(
-                `Выбранное значение: ${
-                  e.target.querySelector(".select__item_selected").textContent
-                }`
-              );
-            });
-
-          const select2 = new CustomSelect(".select2", {
-            defaultValue: "Choose size",
-            data: ["XS", "S", "M", "L"],
-            onSelected(item) {
-              console.log(`Выбранное значение: ${item.textContent}`);
-            },
-          });
-          document
-            .querySelector(".select")
-            .addEventListener("select.change", (e) => {
-              console.log(
-                `Выбранное значение: ${
-                  e.target.querySelector(".select__item_selected").textContent
-                }`
-              );
-            });
-
-          const select3 = new CustomSelect(".select3", {
-            defaultValue: "Quantity",
-            data: ["1", "2", "3", "4", "5"],
-            onSelected(item) {
-              console.log(`Выбранное значение: ${item.textContent}`);
-            },
-          });
-          document
-            .querySelector(".select")
-            .addEventListener("select.change", (e) => {
-              console.log(
-                `Выбранное значение: ${
-                  e.target.querySelector(".select__item_selected").textContent
-                }`
-              );
-            });
-        </script>
-        <button class="product__addtocart-btn">
+        <script src="js/select_options.js"></script>
+        <button type="submit" class="product__addtocart-btn">
           <i class="fa fa-shopping-cart"></i>Add to Cart
         </button>
       </div>

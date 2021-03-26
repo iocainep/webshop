@@ -13,13 +13,13 @@
         background: $lavender-blush;
     }
 
-    &__header-name h1 {
+    &__header-name h2 {
         @include font(24px,29px);
         color: $dark-pink;
         text-transform: uppercase;
     }
 
-    &__header-crumps h1{
+    &__header-crumps h2{
         @include font(14px,17px,300);
     }
 
